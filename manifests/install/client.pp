@@ -52,6 +52,7 @@ class easy_ipa::install::client {
   ${client_install_cmd_opts_mkhomedir} \
   ${client_install_cmd_opts_fixed_primary} \
   ${client_install_cmd_opts_no_ntp} \
+  --force-join \
   --unattended"
 
   exec { "client_install_${::fqdn}":
